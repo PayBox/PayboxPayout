@@ -1,0 +1,21 @@
+{
+    "name": "payboxmoney/payout",
+    "type": "library",
+    "license": "GPL-3.0",
+    "autoload": {
+        "psr-4": {
+            "Paybox\\Payout\\": "src/",
+            "Paybox\\Payout\\Models\\": "src/models/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^5.5",
+        "payboxmoney/cardstorage": "^1.1.0"
+    },
+    "config": {
+        "platform": {
+            "php": "5.5"
+        }
+    }
+}
