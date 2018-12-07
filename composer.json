@@ -10,12 +10,12 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "php": "^5.5",
-        "payboxmoney/cardstorage": "^1.1.0"
+        "php": "^7.0",
+        "payboxmoney/cardstorage": "^1.2.0"
     },
     "config": {
         "platform": {
-            "php": "5.5"
+            "php": "7.0"
         }
     }
 }
