@@ -203,7 +203,7 @@ class Facade extends DataContainer implements PayoutInterface {
         try {
             $this->save('api/balance_status', false);
             $this->send();
-            return $this->getServerAnswer('status');
+            return $this->getServerAnswer('balance');
         } catch(PropertyException $e) {
             echo $e->getMessage();
         } catch(ConnectionException $e) {
