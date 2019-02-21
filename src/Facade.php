@@ -53,7 +53,7 @@ class Facade extends DataContainer implements PayoutInterface {
      *
      * Method get all required params, check filling and send request to Paybox
      *
-     * @return bool|Exception
+     * @return array|bool|Exception
      *
      */
 
@@ -67,8 +67,7 @@ class Facade extends DataContainer implements PayoutInterface {
             $this->config->required('orderTimeLimit');
             $this->save('api/reg2reg', false);
             $this->send();
-            $this->redirectUrl = $this->getServerAnswer('redirect_url');
-            return true;
+            return $this->serverAnswer;
         } catch(PropertyException $e) {
             echo $e->getMessage();
         } catch(ConnectionException $e) {

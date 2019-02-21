@@ -16,8 +16,6 @@ $payout->getConfig()->setPostLink('http://site.ru/');
 $payout->getConfig()->setBackLink('http://site.ru/');
 $payout->getConfig()->setOrderTimeLimit('2019-11-25 00:00:00');
 
-if($payout->reg2reg()) {
-    header('Location:' . $payout->redirectUrl);
-}
+$payout->reg2reg();
 
 //TODO Call getStatus() if the request returned error code equals 9999, 0
