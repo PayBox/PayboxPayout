@@ -18,7 +18,7 @@ $ composer require payboxmoney/payout "^1.2"
 
 ### Выплата с зарегистрированный карты на незарегистрированную
 
-[Ссылка на описание](https://paybox.money/docs/ru/pay-out/3.0#tag/Bazovye-zaprosy/paths/~1api~1reg2nonreg/post)
+[Подробное описание](https://paybox.money/docs/ru/pay-out/3.0#tag/Bazovye-zaprosy/paths/~1api~1reg2nonreg/post)
 
 #### Пример
 ~~~php
@@ -40,7 +40,7 @@ if($payout->reg2nonreg()) {
 ---
 ### Перевод с зарегистрированной карты на зарегистрированную
 
-[Ссылка на описание](https://paybox.money/docs/ru/pay-out/3.0#tag/Bazovye-zaprosy/paths/~1api~1reg2reg/post)
+[Подробное описание](https://paybox.money/docs/ru/pay-out/3.0#tag/Bazovye-zaprosy/paths/~1api~1reg2reg/post)
 
 #### Пример
 ~~~php
@@ -63,7 +63,7 @@ $payout->reg2reg();
 
 ### Запрос на получение статуса транзакции
 
-[Ссылка на описание](https://paybox.money/docs/ru/pay-out/3.0#tag/Dopolnitelnye-zaprosy/paths/~1api~1payment_status/post)
+[Подробное описание](https://paybox.money/docs/ru/pay-out/3.0#tag/Dopolnitelnye-zaprosy/paths/~1api~1payment_status/post)
 
 #### Пример
 ~~~php
